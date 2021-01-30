@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    font-family: "Microsoft Yahei";
+}
+.maxHead{
+    margin-top: 100px;
+    margin-left: 400px;
+}
+.addthing {
+    margin-top:50px;
+    margin-left: 400px;
+    margin-bottom: 30px;
+}
+.addthing .adding{
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+.addthing .deleteAll{
+    height: 25px;
+    margin-left: 20px;
+    border: transparent;
+    border-radius: 5px;
+    background-color: rgb(212, 203, 203);
+}
+.addthing .deleteAll:hover{
+    background-color: rgb(231, 35, 68);
+    cursor: pointer;
+}
+.list {
+    border: solid 2px black;
+    width: 600px;
+    margin-left: 360px;
+}
+.list .list-head{
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.list-item li{
+    position: relative;
+    list-style: none;
+    width: 500px;
+    height: 20px;
+    background-color: rgba(189, 196, 196, 0.61);
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+ .del{
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(189, 196, 196, 0.61);
+}
+ .del:hover, .fix:hover{
+    background-color: rgb(233, 213, 32);
+    cursor: pointer;
+}
+.fix{
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(189, 196, 196, 0.61);
+}
+.list-item li .lab{
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+.addthing .lab2:hover{
+    cursor: pointer;
+}
+.list-item li .cbox{
+    position: absolute;
+    right: 5px;
+    top: 4px;
+}

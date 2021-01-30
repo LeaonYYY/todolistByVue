@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>toDoList</title>
+   <link rel="stylesheet" href="todolist.css">
+   <script src="vue.js" ></script>
+</head>
+<body >
+    <div id="todolist">
+        <h1 class="maxHead">To_Do_List</h1>
+        <div class="addthing">
+                    <label for="thing" class="lab2">任务添加：</label>
+                    <input type="text" placeholder="在此输入任务并按回车键结束" id="thing" class="adding" v-on:keyup.enter="addList" v-model="thing.name">
+                    <input type="button" value="删除" class="del" v-on:click="del" >
+                    <input type="button" value="修改" class="fix" v-on:click="fix" >
+                    <input type="button" value="清空列表" class="deleteAll" v-on:click="deleteAll" >
+
+        </div>   
+                       
+         <section class="list">
+             <h3 class="list-head">正在进行中的任务：</h3>
+             <ul class="list-item" id="dolist">
+                 <li v-for="item in items" ><label class="lab">{{item.name}}</label><input type=checkbox value="true" v-model="item.isOk" class="cbox"></li>
+             </ul> 
+         </section>
+                    
+ 
+    </div>
+    <script src="todolist.js"></script>  
+</body>
+</html>
